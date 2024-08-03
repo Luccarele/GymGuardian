@@ -1,0 +1,41 @@
+### Create Member
+POST  http://localhost:3000/member/
+Content-Type: application/json
+
+{
+    "complete_name": "John Doe",
+    "gender": "Male",
+    "address": "123 Main St",
+    "phone_number": "555-1234",
+    "email": "john.doe@example.com",
+    "registration_date":  "2024-01-01",
+    "plan":  "Diamond",
+    "payment_status": "Paid",
+    "authorization_and_therms":true
+
+}
+
+### Search All Members
+GET http://localhost:3000/member/
+
+
+
+### Search With Params
+GET http://localhost:3000/member/search?completeName=Doe
+
+
+### Search By Id
+GET http://localhost:3000/member/V51DFO
+
+
+### Modify Member
+PUT http://localhost:3000/member/V51DFO
+Content-Type: application/json
+
+{
+
+    "complete_name": "John Doe"
+
+}
+### Remove Member
+DELETE http://localhost:3000/member/OBDS6V
